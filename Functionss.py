@@ -1,9 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
 
-# In[1]:
-
-
+This is a temporary script file.
+"""
 
 import pandas as pd
 import numpy as np
@@ -67,10 +67,10 @@ def plot_feature_importances(model, X_train):
     plt.yticks(np.arange(n_features), X_train.columns.values) 
     plt.xlabel("Feature importance")
     plt.ylabel("Feature")
-
+    
 def plot_corr_matrix(y_true,y_pred,classes,normalize=False,title=None,cmap=plt.cm.YlGn):
     labels=['Sativa','Indica','Hybrid']
-    cmat=pd.crosstab(y_test, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
+    cmat=pd.crosstab(y_true, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
     print(cmat)
     cm=confusion_matrix(y_true,y_pred)
     fig, ax =plt.subplots()
@@ -96,10 +96,3 @@ def plot_corr_matrix(y_true,y_pred,classes,normalize=False,title=None,cmap=plt.c
                     color="white" if cm[i, j] > thresh else "black")
     fig.tight_layout()
     return ax
-
-
-# In[ ]:
-
-
-
-
