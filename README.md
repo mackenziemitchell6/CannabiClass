@@ -4,7 +4,7 @@ By Mackenzie Mitchell
 ## Overview
 The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using different classification models. Using data obtained from The Strain API and from web scraping WikiLeaf, I was able to classify cannabis strains based on their effects with 69.48% accuracy and an average F-1 score across all classes of 0.65 using a Scalar Vector Machine model.
 
-The process of this project was to run a Dummy Baseline Model, then run some classification models with all features, then to select some features by hand and run the models with these features only, then to perform PCA to reduce dimensionality and run the models with these principal components, running grid search along the way with the applicable models.
+The process of this project was to run a Dummy Baseline Model, then run some classification models with all features, then to select some features by hand and run the models with these features only, then to perform PCA to reduce dimensionality and run the models with these principal components, running grid search along the way with the applicable models. Only a few of the best models will be showcased here.
 
 The goal is to predict all indica strains as either indica or hybrid, and to predict all sativa strains as either sativa or hybrid. This is because of the significant difference in effects and results from consuming these two different types of strains. While indica is better for night use and to relax, sativa is better for day use. Therefore, if someone wanted to consume sativa but instead consumed indica, they would be very upset as they would become tired and lazy during the time they may have wanted to be creative and uplifted. Additionally, of course, the overall goal is to predict as many of the observations as the correct strain as possible. 
 
@@ -62,11 +62,38 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   ### PCA 
   After implementing PCA and running models, the results actually seemed to decrease in their performance. However, this was great experience for me to work with PCA as I was confused about this concept and how to implement it prior. 
   ![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/PCAPlot.png "PCA")
+  
   ## Modeling
   ### Baseline Dummy Model
   The most populated class is hybrid, so predict all strains as hybrid. 
   Accuracy: 57.85%
   Average F-1 Score: 0.7
+  
   ![Baseline Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/BaselineConfuseMatrix.png "Baseline Matrix")
+  
   ### Logistic Regression Model
+  This model improved accuracy from the baseline, but was not the best model. Logistic Regression with PCA components reduced accuracy to 57.85% 
+  Accuracy: 66.28%
+  Average F-1 Score: 0.6
+  
+  ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/LogisticConfuseMatrix.png "Logistic Matrix")
+  
+  ### Best KNN Model (K=19)
   This model improved accuracy from the baseline, but was not the best model. 
+  Accuracy: 66.86%
+  Average F-1 Score: 0.6
+  
+  ![Best KNN Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/BestKKNNConfuseMatrix.png "Best KNN Matrix")
+
+  ### Best Random Forest
+  Accuracy: 68.31%
+  Average F-1 Score: 0.6
+  
+  ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/ForrestAllDataMtx.png "Best RF Matrix")
+  
+  ### Scalar Vector Machine
+  Accuracy: 69.48%
+  Average F-1 Score: 0.63
+  
+  ![SVM mtx](https://github.com/mackenziemitchell6/CannabiClass/blob/master/SVMmtx.png "SVM mtx")
+  
