@@ -4,10 +4,10 @@ By Mackenzie Mitchell
 ## Overview
 The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using a classification model. The data was obtained from The Strain API and from web scraping WikiLeaf. I was able to classify cannabis strains based on their effects with 69.48% accuracy and an average F-1 score across all classes of 0.65 using a Scalar Vector Machine model.
 ### Process
-Dummy Baseline Model
-Classification models with all features
-Classification models with hand selected features
-Classification models with PCA prinicpal component variables
+Dummy Baseline Model \n
+Classification models with all features \n
+Classification models with hand selected features \n
+Classification models with PCA prinicpal component variables \n
 Grid Search 
 ### Goal
 The goal is to predict all indica strains as either indica or hybrid, and to predict all sativa strains as either sativa or hybrid. This is because of the significant difference in effects and results from using these two different types of strains. While indica is better for night use and to relax, sativa is better for day use. Therefore, if someone wanted to consume sativa but instead consumed indica, they would be very upset as they would become tired and lazy during the time they may have wanted to be creative and uplifted. Additionally, of course, the overall goal is to predict as many of the observations as the correct strain as possible. 
