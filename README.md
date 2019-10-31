@@ -2,14 +2,22 @@
 By Mackenzie Mitchell
 
 ## Overview
-The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using different classification models. Using data obtained from The Strain API and from web scraping WikiLeaf, I was able to classify cannabis strains based on their effects with 69.48% accuracy and an average F-1 score across all classes of 0.65 using a Scalar Vector Machine model.
-
-The process of this project was to run a Dummy Baseline Model, then run some classification models with all features, then to select some features by hand and run the models with these features only, then to perform PCA to reduce dimensionality and run the models with these principal components, running grid search along the way with the applicable models. Only a few of the best models will be showcased here.
-
-The goal is to predict all indica strains as either indica or hybrid, and to predict all sativa strains as either sativa or hybrid. This is because of the significant difference in effects and results from consuming these two different types of strains. While indica is better for night use and to relax, sativa is better for day use. Therefore, if someone wanted to consume sativa but instead consumed indica, they would be very upset as they would become tired and lazy during the time they may have wanted to be creative and uplifted. Additionally, of course, the overall goal is to predict as many of the observations as the correct strain as possible. 
+The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using a classification model. The data was obtained from The Strain API and from web scraping WikiLeaf. I was able to classify cannabis strains based on their effects with accuracy of 68.6% using a Logistic Regression model.
+### Process
+Dummy Baseline Model   
+Classification models with all features  
+Classification models with hand selected features  
+Classification models with PCA prinicpal component variables  
+Grid Search 
+### Goal
+The goal is to predict all indica strains as either indica or hybrid, and to predict all sativa strains as either sativa or hybrid. This is because of the significant difference in effects and results from using these two different types of strains. While indica is better for night use and to relax, sativa is better for day use. Therefore, if someone wanted to consume sativa but instead consumed indica, they would be very upset as they would become tired and lazy during the time they may have wanted to be creative and uplifted. Additionally, of course, the overall goal is to predict as many of the observations as the correct strain as possible. 
 
   #### Venn Diagram
+<<<<<<< HEAD
 ![Venn Diagram](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/VennDiagram_Indica_Sativa.png "Venn Diagram")
+=======
+![Venn Diagram](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/VennDiagram_Indica_Sativa.png "Venn Diagram")
+>>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
 
 ### Obtaining Data and Feature Engineering
 The goal of this project was intially to classifiy a cannabis strain as indica, sativa, or hybrid based on it's chemcial components. After webscraping, I was only able to get about 500 observations. This was insufficient for my objective. 
@@ -19,6 +27,7 @@ The features included the various effects of the cannabis strain as well as the 
 
 ## EDA
   ### Class Distribution
+<<<<<<< HEAD
 ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/TargetDistplots.png "Class Distribution")
 There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
   ### THC Content
@@ -62,6 +71,51 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   ### PCA 
   After implementing PCA and running models, the results actually seemed to decrease in their performance. However, this was great experience for me to work with PCA as I was confused about this concept and how to implement it prior. 
   ![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/PCAPlot.png "PCA")
+=======
+![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/TargetDistplots.png "Class Distribution")
+There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
+  ### THC Content
+![THC Content](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/thc.png "THC Content")
+
+The THC content seemed to be pretty stable across all classes, with no strain type having significantly more or less THC than the others. There are some outliers in the indica class with higher levels of THC while the other two classes do not experience these outliers that have these excess levels of THC. 
+
+![THC Violin Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/ViolinPlots.png "THC plot")
+  ### Feature Selection
+ In looking at how features change across the different classes, I was able to hand select certain features that seemed to distinctly change across the three classes. The selected features are shown as follows:
+  #### THC
+  ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/thc.png "Class Distribution")
+  #### Relaxed
+  ![Relaxed](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Relaxed.png "Relaxed Distribution")
+  #### Hungry
+  ![Hungry](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Hungry.png "Hungry Distribution")
+  #### Sleepy
+  ![Sleepy](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Sleepy.png "Sleepy Distribution")
+  #### Depression
+  ![Depression](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Depression.png "Depression Distribution")
+  #### Insomnia
+  ![Insomnia](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Insomnia.png "Insomnia Distribution")
+  #### Pain
+  ![Pain](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Pain.png "Pain Distribution")
+  #### Euphoric
+  ![Euphoric](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Euphoric.png "Euphoric Distribution")
+  #### Creative
+  ![Creative](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Creative.png "Creative Distribution")
+  #### Energetic
+  ![Energetic](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Energetic.png "Energetic Distribution")
+  #### Dry Mouth
+  ![Dry Mouth](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Dry%20Mouth.png "Dry Mouth Distribution")
+  #### Nausea
+  ![Nausea](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Nausea.png "Nausea Distribtuion")
+  #### Uplifted
+  ![Uplifted](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Uplifted.png "Uplifted Distribution")
+  #### Fatigue
+  ![Fatigue](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Fatigue.png "Fatigue Distribution")
+  #### Focused
+  ![Focused](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Focused.png "Focused Distribution")
+  ### PCA 
+  After implementing PCA and running models, the results actually seemed to decrease in their performance. However, this was great experience for me to work with PCA as I was confused about this concept and how to implement it prior. 
+  ![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/PCAPlot.png "PCA")
+>>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
   
   ## Modeling
   ### Baseline Dummy Model
@@ -69,26 +123,38 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   Accuracy: 57.85%
   Average F-1 Score: 0.7
   
+<<<<<<< HEAD
   ![Baseline Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/BaselineConfuseMatrix.png "Baseline Matrix")
+=======
+  ![Baseline Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/BaselineConfuseMatrix.png "Baseline Matrix")
+>>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
   
   ### Logistic Regression Model
   This model improved accuracy from the baseline, but was not the best model. Logistic Regression with PCA components reduced accuracy to 57.85% 
-  Accuracy: 66.28%
-  Average F-1 Score: 0.6
+  Accuracy: 68.6
   
+<<<<<<< HEAD
   ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/LogisticConfuseMatrix.png "Logistic Matrix")
+=======
+  ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/LogisticConfuseMatrix.png "Logistic Matrix")
+>>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
   
   ### Best KNN Model (K=19)
   This model improved accuracy from the baseline, but was not the best model. 
   Accuracy: 66.86%
   Average F-1 Score: 0.6
   
+<<<<<<< HEAD
   ![Best KNN Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/BestKKNNConfuseMatrix.png "Best KNN Matrix")
+=======
+  ![Best KNN Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/BestKKNNConfuseMatrix.png "Best KNN Matrix")
+>>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
 
   ### Best Random Forest
   Accuracy: 68.31%
   Average F-1 Score: 0.6
   
+<<<<<<< HEAD
   ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/ForrestAllDataMtx.png "Best RF Matrix")
   
   ### Scalar Vector Machine
@@ -96,4 +162,9 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   Average F-1 Score: 0.63
   
   ![SVM mtx](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/SVMmtx.png "SVM mtx")
+=======
+  ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/ForrestAllDataMtx.png "Best RF Matrix")
+  
+
+>>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
   
