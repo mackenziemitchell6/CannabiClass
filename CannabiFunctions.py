@@ -1,28 +1,20 @@
-#!/usr/bin/env python
-# coding: utf-8
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 31 15:10:46 2019
 
-# In[1]:
-
-
-
-import pandas as pd
+@author: mackenziemitchell
+"""
 import numpy as np
-import requests
-from bs4 import BeautifulSoup
-from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
-import seaborn as sns
-import matplotlib.pyplot as plt
+import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import StandardScaler, label_binarize
-from sklearn.metrics import precision_score, recall_score, accuracy_score, f1_score, roc_curve
-from sklearn.metrics import auc, classification_report, confusion_matrix
-
-
-# In[3]:
-
+from sklearn.metrics import precision_score, recall_score, accuracy_score 
+from sklearn.metrics import auc, confusion_matrix, f1_score, roc_curve
+import matplotlib.pyplot as plt
 
 def find_best_k(X_train, y_train, X_test, y_test, min_k=1, max_k=25):
-    best_k,best_score = 0,0.0
+    best_k = 0
+    best_score = 0.0
     for k in range(min_k, max_k+1, 2):
         knn = KNeighborsClassifier(n_neighbors=k)
         knn.fit(X_train, y_train)
@@ -33,6 +25,7 @@ def find_best_k(X_train, y_train, X_test, y_test, min_k=1, max_k=25):
             best_score = accuracy
     print("Best Value for k: {}".format(best_k))
     print("Accuracy: {}".format(best_score))
+
     
 def print_metrics(test, preds):
     print("Precision Score: {}".format(precision_score(test, preds,average=None)))
@@ -41,7 +34,9 @@ def print_metrics(test, preds):
     print("F1 Score: {}".format(f1_score(test, preds,average=None)))
     
 def roc(classifier, X_train, X_test, y_train, y_test, n_classes):
-    fpr,tpr,roc_auc= dict(),dict(),dict()
+    fpr = dict()
+    tpr = dict()
+    roc_auc = dict()
     y_score=classifier.fit(X_train, y_train).predict(X_test)
     for i in range(n_classes):
         fpr[i], tpr[i], _ = roc_curve(y_test[:, i], y_score[:, i])
@@ -60,17 +55,17 @@ def roc(classifier, X_train, X_test, y_train, y_test, n_classes):
     plt.legend(loc="lower right")
     plt.show()
     
-def plot_feature_importances(model, X_train):
+def plot_feature_importances(model,X_train, X_test, y_train, y_test):
     n_features = X_train.shape[1]
     plt.figure(figsize=(8,8))
     plt.barh(range(n_features), model.feature_importances_, align='center') 
     plt.yticks(np.arange(n_features), X_train.columns.values) 
     plt.xlabel("Feature importance")
     plt.ylabel("Feature")
-
+    
 def plot_corr_matrix(y_true,y_pred,classes,normalize=False,title=None,cmap=plt.cm.YlGn):
-    labels=['Sativa','Indica','Hybrid']
-    cmat=pd.crosstab(y_test, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
+    #labels=['Sativa','Indica','Hybrid']
+    cmat=pd.crosstab(y_true, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
     print(cmat)
     cm=confusion_matrix(y_true,y_pred)
     fig, ax =plt.subplots()
@@ -96,10 +91,3 @@ def plot_corr_matrix(y_true,y_pred,classes,normalize=False,title=None,cmap=plt.c
                     color="white" if cm[i, j] > thresh else "black")
     fig.tight_layout()
     return ax
-
-
-# In[ ]:
-
-
-
-
