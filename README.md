@@ -2,7 +2,7 @@
 By Mackenzie Mitchell
 
 ## Overview
-The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using a classification model. The data was obtained from The Strain API and from web scraping WikiLeaf. I was able to classify cannabis strains based on their effects with 69.48% accuracy and an average F-1 score across all classes of 0.65 using a Scalar Vector Machine model.
+The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using a classification model. The data was obtained from The Strain API and from web scraping WikiLeaf. I was able to classify cannabis strains based on their effects with accuracy of 68.6% using a Logistic Regression model.
 ### Process
 Dummy Baseline Model   
 Classification models with all features  
@@ -77,8 +77,7 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   
   ### Logistic Regression Model
   This model improved accuracy from the baseline, but was not the best model. Logistic Regression with PCA components reduced accuracy to 57.85% 
-  Accuracy: 66.28%
-  Average F-1 Score: 0.6
+  Accuracy: 68.6
   
   ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/LogisticConfuseMatrix.png "Logistic Matrix")
   
@@ -95,9 +94,5 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   
   ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/ForrestAllDataMtx.png "Best RF Matrix")
   
-  ### Scalar Vector Machine
-  Accuracy: 69.48%
-  Average F-1 Score: 0.63
-  
-  ![SVM mtx](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/SVMmtx.png "SVM mtx")
+
   
