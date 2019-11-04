@@ -43,33 +43,33 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   #### Hungry
   ![Hungry](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Hungry.png "Hungry Distribution")
   #### Sleepy
-  ![Sleepy](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Sleepy.png "Sleepy Distribution")
+  ![Sleepy](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Sleepy.png "Sleepy Distribution")
   #### Depression
-  ![Depression](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Depression.png "Depression Distribution")
+  ![Depression](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Depression.png "Depression Distribution")
   #### Insomnia
-  ![Insomnia](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Insomnia.png "Insomnia Distribution")
+  ![Insomnia](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Insomnia.png "Insomnia Distribution")
   #### Pain
-  ![Pain](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Pain.png "Pain Distribution")
+  ![Pain](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Pain.png "Pain Distribution")
   #### Euphoric
-  ![Euphoric](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Euphoric.png "Euphoric Distribution")
+  ![Euphoric](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Euphoric.png "Euphoric Distribution")
   #### Creative
-  ![Creative](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Creative.png "Creative Distribution")
+  ![Creative](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Creative.png "Creative Distribution")
   #### Energetic
-  ![Energetic](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Energetic.png "Energetic Distribution")
+  ![Energetic](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Energetic.png "Energetic Distribution")
   #### Dry Mouth
-  ![Dry Mouth](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/DryMouth.png "Dry Mouth Distribution")
+  ![Dry Mouth](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/DryMouth.png "Dry Mouth Distribution")
   #### Nausea
-  ![Nausea](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Nausea.png "Nausea Distribtuion")
+  ![Nausea](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Nausea.png "Nausea Distribtuion")
   #### Uplifted
-  ![Uplifted](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Uplifted.png "Uplifted Distribution")
+  ![Uplifted](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Uplifted.png "Uplifted Distribution")
   #### Fatigue
-  ![Fatigue](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Fatigue.png "Fatigue Distribution")
+  ![Fatigue](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Fatigue.png "Fatigue Distribution")
   #### Focused
-  ![Focused](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Focused.png "Focused Distribution")
+  ![Focused](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Focused.png "Focused Distribution")
   ### PCA 
   After implementing PCA and running models, the results actually seemed to decrease in their performance. However, this was great experience for me to work with PCA as I was confused about this concept and how to implement it prior. 
   
-![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/PCAPlot.png "PCA")
+![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/PCAPlot.png "PCA")
 
 ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/TargetDistplots.png "Class Distribution")
 There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
@@ -102,7 +102,7 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   #### Energetic
   ![Energetic](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Energetic.png "Energetic Distribution")
   #### Dry Mouth
-  ![Dry Mouth](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Dry%20Mouth.png "Dry Mouth Distribution")
+  ![Dry Mouth](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/DryMouth.png "Dry Mouth Distribution")
   #### Nausea
   ![Nausea](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Nausea.png "Nausea Distribtuion")
   #### Uplifted
@@ -128,7 +128,7 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   This model improved accuracy from the baseline, but was not the best model. Logistic Regression with PCA components reduced accuracy to 57.85% 
   Accuracy: 68.6
   
-  ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/LogisticConfuseMatrix.png "Logistic Matrix")
+  ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/LogisticConfuseMatrix.png "Logistic Matrix")
   
   ### Best KNN Model (K=19)
   This model improved accuracy from the baseline, but was not the best model. 
@@ -143,16 +143,14 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   Average F-1 Score: 0.6
   
 
-  ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/ForrestAllDataMtx.png "Best RF Matrix")
+  ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/ForrestAllDataMtx.png "Best RF Matrix")
   
   ### Scalar Vector Machine
   Accuracy: 69.48%
   Average F-1 Score: 0.63
   
-  ![SVM mtx](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/SVMmtx.png "SVM mtx")
+  ![SVM mtx](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/SVMmtx.png "SVM mtx")
 
 
-  
-
->>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
+ 
   
