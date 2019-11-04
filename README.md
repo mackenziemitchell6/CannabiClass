@@ -24,7 +24,9 @@ The features included the various effects of the cannabis strain as well as the 
 
 ## EDA
   ### Class Distribution
+  
 ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/TargetDistplots.png "Class Distribution")
+
 There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
   ### THC Content
 ![THC Content](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/thc.png "THC Content")
@@ -35,7 +37,7 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   ### Feature Selection
  In looking at how features change across the different classes, I was able to hand select certain features that seemed to distinctly change across the three classes. The selected features are shown as follows:
   #### THC
-  ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/thc.png "Class Distribution")
+![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/thc.png "Class Distribution")
   #### Relaxed
   ![Relaxed](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Relaxed.png "Relaxed Distribution")
   #### Hungry
