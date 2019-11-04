@@ -25,23 +25,23 @@ The features included the various effects of the cannabis strain as well as the 
 ## EDA
   ### Class Distribution
   
-![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/TargetDistplots.png "Class Distribution")
+![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/TargetDistplots.png "Class Distribution")
 
 There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
   ### THC Content
-![THC Content](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/thc.png "THC Content")
+![THC Content](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/thc.png "THC Content")
 
 The THC content seemed to be pretty stable across all classes, with no strain type having significantly more or less THC than the others. There are some outliers in the indica class with higher levels of THC while the other two classes do not experience these outliers that have these excess levels of THC. 
 
-![THC Violin Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/ViolinPlots.png "THC plot")
+![THC Violin Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/ViolinPlots.png "THC plot")
   ### Feature Selection
  In looking at how features change across the different classes, I was able to hand select certain features that seemed to distinctly change across the three classes. The selected features are shown as follows:
   #### THC
-![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/thc.png "Class Distribution")
+![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/thc.png "Class Distribution")
   #### Relaxed
-  ![Relaxed](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Relaxed.png "Relaxed Distribution")
+  ![Relaxed](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Relaxed.png "Relaxed Distribution")
   #### Hungry
-  ![Hungry](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Hungry.png "Hungry Distribution")
+  ![Hungry](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Hungry.png "Hungry Distribution")
   #### Sleepy
   ![Sleepy](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Sleepy.png "Sleepy Distribution")
   #### Depression
