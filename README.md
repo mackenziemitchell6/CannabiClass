@@ -13,8 +13,8 @@ Grid Search
 The goal is to predict all indica strains as either indica or hybrid, and to predict all sativa strains as either sativa or hybrid. This is because of the significant difference in effects and results from using these two different types of strains. While indica is better for night use and to relax, sativa is better for day use. Therefore, if someone wanted to consume sativa but instead consumed indica, they would be very upset as they would become tired and lazy during the time they may have wanted to be creative and uplifted. Additionally, of course, the overall goal is to predict as many of the observations as the correct strain as possible. 
 
   #### Venn Diagram
-<<<<<<< HEAD
-![Venn Diagram](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/VennDiagram_Indica_Sativa.png "Venn Diagram")
+
+![Venn Diagram](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/VennDiagram_Indica_Sativa.png "Venn Diagram")
 
 ### Obtaining Data and Feature Engineering
 The goal of this project was intially to classifiy a cannabis strain as indica, sativa, or hybrid based on it's chemcial components. After webscraping, I was only able to get about 500 observations. This was insufficient for my objective. 
