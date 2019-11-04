@@ -79,7 +79,7 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   Average F-1 Score: 0.7
   
 
-  ![Baseline Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/BaselineConfuseMatrix.png "Baseline Matrix")
+  ![Baseline Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/BaselineConfuseMatrix.png "Baseline Matrix")
   
   ### Logistic Regression Model
   This model improved accuracy from the baseline, but was not the best model. Logistic Regression with PCA components reduced accuracy to 57.85% 
