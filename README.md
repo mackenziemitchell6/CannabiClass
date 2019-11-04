@@ -68,8 +68,9 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   ![Focused](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/Focused.png "Focused Distribution")
   ### PCA 
   After implementing PCA and running models, the results actually seemed to decrease in their performance. However, this was great experience for me to work with PCA as I was confused about this concept and how to implement it prior. 
-  ![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/PCAPlot.png "PCA")
-=======
+  
+![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/PCAPlot.png "PCA")
+
 ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/TargetDistplots.png "Class Distribution")
 There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
   ### THC Content
