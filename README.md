@@ -15,9 +15,6 @@ The goal is to predict all indica strains as either indica or hybrid, and to pre
   #### Venn Diagram
 <<<<<<< HEAD
 ![Venn Diagram](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/VennDiagram_Indica_Sativa.png "Venn Diagram")
-=======
-![Venn Diagram](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/VennDiagram_Indica_Sativa.png "Venn Diagram")
->>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
 
 ### Obtaining Data and Feature Engineering
 The goal of this project was intially to classifiy a cannabis strain as indica, sativa, or hybrid based on it's chemcial components. After webscraping, I was only able to get about 500 observations. This was insufficient for my objective. 
@@ -27,7 +24,6 @@ The features included the various effects of the cannabis strain as well as the 
 
 ## EDA
   ### Class Distribution
-<<<<<<< HEAD
 ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/TargetDistplots.png "Class Distribution")
 There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
   ### THC Content
@@ -115,7 +111,6 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   ### PCA 
   After implementing PCA and running models, the results actually seemed to decrease in their performance. However, this was great experience for me to work with PCA as I was confused about this concept and how to implement it prior. 
   ![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/PCAPlot.png "PCA")
->>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
   
   ## Modeling
   ### Baseline Dummy Model
@@ -123,38 +118,28 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   Accuracy: 57.85%
   Average F-1 Score: 0.7
   
-<<<<<<< HEAD
+
   ![Baseline Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/BaselineConfuseMatrix.png "Baseline Matrix")
-=======
-  ![Baseline Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/BaselineConfuseMatrix.png "Baseline Matrix")
->>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
   
   ### Logistic Regression Model
   This model improved accuracy from the baseline, but was not the best model. Logistic Regression with PCA components reduced accuracy to 57.85% 
   Accuracy: 68.6
   
-<<<<<<< HEAD
   ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/LogisticConfuseMatrix.png "Logistic Matrix")
-=======
-  ![Logistic Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/LogisticConfuseMatrix.png "Logistic Matrix")
->>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
   
   ### Best KNN Model (K=19)
   This model improved accuracy from the baseline, but was not the best model. 
   Accuracy: 66.86%
   Average F-1 Score: 0.6
   
-<<<<<<< HEAD
-  ![Best KNN Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/BestKKNNConfuseMatrix.png "Best KNN Matrix")
-=======
   ![Best KNN Matrix](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/BestKKNNConfuseMatrix.png "Best KNN Matrix")
->>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
+
 
   ### Best Random Forest
   Accuracy: 68.31%
   Average F-1 Score: 0.6
   
-<<<<<<< HEAD
+
   ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/ForrestAllDataMtx.png "Best RF Matrix")
   
   ### Scalar Vector Machine
@@ -162,8 +147,8 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   Average F-1 Score: 0.63
   
   ![SVM mtx](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizatons/SVMmtx.png "SVM mtx")
-=======
-  ![Best Random Forest](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/ForrestAllDataMtx.png "Best RF Matrix")
+
+
   
 
 >>>>>>> e826a46ca4e6d4171ff8bde88e7059b7e17e0683
