@@ -71,50 +71,7 @@ The THC content seemed to be pretty stable across all classes, with no strain ty
   
 ![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/PCAPlot.png "PCA")
 
-![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/TargetDistplots.png "Class Distribution")
-There did not seem to be class imbalance at first as no one class contained half the data, however, if I were to go back I might SMOTE or use another method in order to treat the fact that there were 1004 observations of hybrid strains and only 966 observations split between indica and sativa strains within my dataset.
-  ### THC Content
-![THC Content](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/thc.png "THC Content")
 
-The THC content seemed to be pretty stable across all classes, with no strain type having significantly more or less THC than the others. There are some outliers in the indica class with higher levels of THC while the other two classes do not experience these outliers that have these excess levels of THC. 
-
-![THC Violin Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/ViolinPlots.png "THC plot")
-  ### Feature Selection
- In looking at how features change across the different classes, I was able to hand select certain features that seemed to distinctly change across the three classes. The selected features are shown as follows:
-  #### THC
-  ![Class Distributions](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/thc.png "Class Distribution")
-  #### Relaxed
-  ![Relaxed](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Relaxed.png "Relaxed Distribution")
-  #### Hungry
-  ![Hungry](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Hungry.png "Hungry Distribution")
-  #### Sleepy
-  ![Sleepy](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Sleepy.png "Sleepy Distribution")
-  #### Depression
-  ![Depression](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Depression.png "Depression Distribution")
-  #### Insomnia
-  ![Insomnia](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Insomnia.png "Insomnia Distribution")
-  #### Pain
-  ![Pain](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Pain.png "Pain Distribution")
-  #### Euphoric
-  ![Euphoric](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Euphoric.png "Euphoric Distribution")
-  #### Creative
-  ![Creative](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Creative.png "Creative Distribution")
-  #### Energetic
-  ![Energetic](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Energetic.png "Energetic Distribution")
-  #### Dry Mouth
-  ![Dry Mouth](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/DryMouth.png "Dry Mouth Distribution")
-  #### Nausea
-  ![Nausea](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Nausea.png "Nausea Distribtuion")
-  #### Uplifted
-  ![Uplifted](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Uplifted.png "Uplifted Distribution")
-  #### Fatigue
-  ![Fatigue](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Fatigue.png "Fatigue Distribution")
-  #### Focused
-  ![Focused](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/Focused.png "Focused Distribution")
-  ### PCA 
-  After implementing PCA and running models, the results actually seemed to decrease in their performance. However, this was great experience for me to work with PCA as I was confused about this concept and how to implement it prior. 
-  ![PCA Plot](https://github.com/mackenziemitchell6/CannabiClass/blob/master/Visualizations/PCAPlot.png "PCA")
-  
   ## Modeling
   ### Baseline Dummy Model
   The most populated class is hybrid, so predict all strains as hybrid. 
