@@ -2,7 +2,7 @@
 By Mackenzie Mitchell
 
 ## Overview
-The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using a classification model. The data was obtained from The Strain API and from web scraping WikiLeaf. I was able to classify cannabis strains based on their effects with accuracy of 68.6% using a Logistic Regression model.
+The purpose of this project was to classify strains of cannabis as indica, sativa, or hybrid using a classification model. The data was obtained from The Strain API and from web scraping WikiLeaf. I was able to classify cannabis strains based on their effects with accuracy of 68.6% using a Logistic Regression one-vs-all model.
 ### Process
 Dummy Baseline Model   
 Classification models with all features  
